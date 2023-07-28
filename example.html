@@ -1,0 +1,42 @@
+<html>
+  <head>
+
+     <title> Sample Page</title>
+
+ </head>
+  <body>
+<style>
+  button
+{
+backgroud-color: transparent;
+border: 1px solid navy;
+padding: 20px;
+font-size: 1.4 rem;
+
+}
+
+button:hover
+{
+background-color:navy;
+border: none;
+color: white;
+}
+</style>
+
+    <button> CLICK ME </button>
+     <div class="container"></div>
+<script>
+function onClickEvent(){
+       const el=document.createElement('p');
+       el.innerText = 'Clicked the button';
+       document.querySelector('.container').appendChild(el);
+          }
+
+document.querySelector('button').onclick=onClickEvent;
+</script>
+
+   </body>
+
+
+
+</html>
