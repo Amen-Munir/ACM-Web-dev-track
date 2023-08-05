@@ -55,11 +55,22 @@ function showQuote() {
 function showRiddle() {
   // Value should be in format: { question: '', answer: '' }
     const randomRiddle = getRandomData("riddles");
+    const { question, answer } = randomRiddle;
+    const quest= document.createElement('p');
+    quest.textContent = question;
+
+
+    const ans= document.createElement('p');
+    ans.textContent = answer;
+    ans.setAttribute('id', 'answer');
+    ans.hidden = true;
     const container = document.querySelector('.riddle');
-    const newRiddle = document.createElement('p');
-    newRiddle.textContent = randomRiddle.question;
+
     clearAll();
-    container.appendChild(newRiddle);
+
+    container.appendChild(quest);
+    container.appendChild(ans);
+
 
 }
 
@@ -71,12 +82,17 @@ function showRiddle() {
  * - If there is a riddle shown but no answer, unhide the answer!
  */
 function revealAnswers() {
-    const randomRiddle = getRandomData("riddles");
-    const container = document.querySelector('.answer');
-    const newAnswer = document.createElement('p');
-    newAnswer.textContent = randomRiddle.answer;
-    container.appendChild(newAnswer);
-
+    const answer = document.querySelector('#answer');
+    if (answer) {
+        if (answer.hidden) {
+            answer.hidden = false;
+        } else {
+            alert("Answer already revealed!");
+        }
+    } else {
+        alert("No riddle to reveal answer!");
+    }
+    
 }
 
 function getRandomData(type) {
