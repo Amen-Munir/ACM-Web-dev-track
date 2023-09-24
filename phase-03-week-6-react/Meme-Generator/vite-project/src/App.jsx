@@ -10,7 +10,7 @@ function Header() {
   return (
       <header className="header">
           <img 
-        src="C:\Users\HP\Desktop\Project1\vite-project\images\troll-face.png" 
+        src="images/troll-face.png" alt="Troll Face"
               className="header--image"
           />
           <h2 className="header--title">Meme Generator</h2>

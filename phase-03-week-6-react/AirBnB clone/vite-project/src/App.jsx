@@ -6,7 +6,7 @@ import data from "./data";
 function Navbar() {
   return (
     <nav>
-      <img src="../images/airbnb-logo.png" className="nav--logo" />
+      <img src="./images/airbnb-logo.png" className="nav--logo" />
     </nav>
   );
 }
@@ -14,7 +14,7 @@ function Navbar() {
 function Hero() {
   return (
     <section>
-      <img src="../images/photo-grid.png" className="hero--photo" />
+      <img src="./images/photo-grid.png" className="hero--photo" />
       <h1 className="hero--header">Online Experiences</h1>
       <p className="hero--text">
         Join unique interactive activities led by one-of-a-kind hosts—all
@@ -36,9 +36,9 @@ function Card(props) {
   return (
     <div className="card">
        {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img src={`../images/${props.img}`} className="card--image" />
+      <img src={`./images/${props.img}`} className="card--image" />
       <div className="card--stats">
-        <img src="../images/star.png" className="card--star" />
+        <img src="images/star.png" className="card--star" />
         <span>{props.rating}</span>
         <span className="gray">({props.reviewCount}) • </span>
         <span className="gray">{props.country}</span>
