@@ -4,7 +4,8 @@ Tenzies is a simple React game where the goal is to roll dice until all dice sho
 
 ## Demo
 
-You can play the game here: [Tenzies Game]([https://your-app-url.com](https://jocular-starlight-edb184.netlify.app/)https://jocular-starlight-edb184.netlify.app/)
+You can play the game here: [Tenzies Game](https://jocular-starlight-edb184.netlify.app/)https://jocular-starlight-edb184.netlify.app/)
+
 ## How to Play
 Click the "Roll" button to roll the dice.
 Click on individual dice to freeze them at their current value.
