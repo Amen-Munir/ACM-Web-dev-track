@@ -12,3 +12,5 @@ Click on individual dice to freeze them at their current value.
 Continue rolling until all dice show the same value.
 If you achieve "Tenzies" (all dice with the same value), you win!
 Click "New Game" to start a new round.
+
+![Uploading tenzis.jpg…]()
