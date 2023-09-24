@@ -13,4 +13,5 @@ Continue rolling until all dice show the same value.
 If you achieve "Tenzies" (all dice with the same value), you win!
 Click "New Game" to start a new round.
 
-![Uploading tenzis.jpg…]()
+![tenzis](https://github.com/Amen-Munir/ACM-Web-dev-track/assets/121969659/7229fbcb-1f3f-41ee-b04b-68ef2972e751)
+
